@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <title>Title</title>
+</head>
+<body>
+
+    Transcript:
+
+
+    <table>
+        <tr>
+
+            <td> subjectCode</td>
+            <td> name</td>
+            <td> numOfCredits</td>
+            <td> grade</td>
+            <td> semester</td>
+        </tr>
+        <tr  th:each="course : ${courses}">
+
+            <td th:text="${course.subjectCode}"> </td>
+            <td th:text="${course.name}"> </td>
+            <td th:text="${course.numOfCredits}"> </td>
+            <td th:text="${grade}"> </td>
+            <td th:text="${semester}"> </td>
+a
+        </tr>
+    </table>
+
+    <a href=""> buy transcript($5)</a>
+
+</body>
+</html>
